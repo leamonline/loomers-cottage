@@ -1,0 +1,23 @@
+# Secrets and home data
+.env
+.env.*
+!.env.example
+secrets.yaml
+secrets.yml
+*.pem
+*.key
+*.p12
+*.tar
+*.tar.gz
+*.zip
+*.db
+*.db-*
+*.sqlite*
+.storage/
+backups/
+private/
+local/
+node_modules/
+dist/
+coverage/
+.DS_Store
