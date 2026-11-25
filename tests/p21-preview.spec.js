@@ -4,7 +4,13 @@ const { test, expect } = require('@playwright/test');
 
 test.use({ serviceWorkers: 'block' });
 
-const html = readFileSync(join(__dirname, '../lab/p21/preview.html'), 'utf8');
+const previewDirectory = join(__dirname, '../lab/p21');
+const preview = readFileSync(join(previewDirectory, 'preview.html'), 'utf8');
+const component = readFileSync(join(previewDirectory, 'loomers-lab-p21.js'), 'utf8');
+const inMemoryPreview = preview.replace(
+  '<script src="loomers-lab-p21.js" defer></script>',
+  () => `<script>${component}</script>`,
+);
 const routes = [
   'Home', 'Climate', 'Energy', 'Mokka', 'Security', 'Entertainment',
   'Routines', 'Learning & insights', 'Home Health', 'Settings', 'History & analytics',
@@ -23,7 +29,7 @@ for (const width of [390, 599, 820, 1280]) {
       page.on('pageerror', error => errors.push(error.message));
       await page.route('**/*', route => route.abort());
       await page.routeWebSocket('**/*', socket => socket.close());
-      await page.setContent(html);
+      await page.setContent(inMemoryPreview);
 
       const preview = page.locator('loomers-lab-p21');
       const scenario = preview.getByRole('combobox', { name: 'Lab scenario' });

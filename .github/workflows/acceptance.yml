@@ -23,4 +23,10 @@ jobs:
         run: python3 tests/check-repository.py
       - run: npm ci
       - run: npx playwright install --with-deps chromium
-      - run: npm test
+      - name: Replay the original P2.1 acceptance assertions
+        run: |
+          python3 -m venv "$RUNNER_TEMP/p21-venv"
+          "$RUNNER_TEMP/p21-venv/bin/python" -m pip install -r tests/p21/requirements.txt
+          "$RUNNER_TEMP/p21-venv/bin/python" tests/p21/acceptance.py
+      - name: Run supplemental browser regression tests
+        run: npm test

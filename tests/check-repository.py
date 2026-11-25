@@ -1,14 +1,17 @@
 """Check tracked files without writing suspected sensitive values to logs."""
 
 import hashlib
+import json
 import re
 import subprocess
 from urllib.parse import urlsplit
 
+COMPONENT = "lab/p21/loomers-lab-p21.js"
 PREVIEW = "lab/p21/preview.html"
+UPSTREAM_RESULTS = "releases/p21-upstream-results.json"
 SPEC = "docs/technical-specification-v2.1.md"
 INDEX = "docs/decisions.md"
-CHECKSUM = "releases/p21-preview.sha256"
+CHECKSUM = "releases/p21.sha256"
 PUBLIC_HOSTS = {
     "developers.home-assistant.io",
     "registry.npmjs.org",
@@ -26,8 +29,8 @@ PATTERNS = {
     r"github_pat_[A-Za-z0-9_]{20,}|eyJ[\w-]+\.eyJ[\w-]+\.[\w-]+|"
     r"(?:api[_-]?key|password|access[_-]?token|client[_-]?secret)"
     r"""\s*["']?\s*[:=]\s*["'][^"'\s]{8,}["']""",
-    "local host or address": r"\b(?:10|192\.168|172\.(?:1[6-9]|2\d|3[01]))"
-    r"(?:\.\d{1,3}){2,3}\b|\b[\w-]+\.(?:local|lan|internal|home\.arpa)\b|"
+    "local host or address": r"\b(?:10\.\d{1,3}|192\.168|172\.(?:1[6-9]|2\d|3[01]))"
+    r"(?:\.\d{1,3}){2}\b|\b[\w-]+\.(?:local|lan|internal|home\.arpa)\b|"
     r"(?i:\b[A-Z]{1,2}\d[A-Z\d]?\s+\d[A-Z]{2}\b)",
     "live entity identifier": r"\b(?:automation|binary_sensor|button|calendar|camera|climate|"
     r"cover|device_tracker|event|fan|image|input_boolean|input_datetime|input_select|"
@@ -73,21 +76,28 @@ def main():
         raise SystemExit("\n".join(failures))
 
     expected = {f"{prefix}{number:02}" for prefix in "OP" for number in range(1, 34)}
+    registers = []
     for path in (SPEC, INDEX):
-        ids = re.findall(rb"^\| ([OP]\d{2}) \|", files[path], re.MULTILINE)
-        if len(ids) != len(expected) or {item.decode() for item in ids} != expected:
+        rows = re.findall(r"^\| ([OP]\d{2}) \| ([^|]+) \|", files[path].decode(), re.MULTILINE)
+        if len(rows) != len(expected) or {item for item, _ in rows} != expected:
             raise SystemExit(f"{path}: expected each of the 66 decision IDs exactly once")
+        registers.append(dict(rows))
+    if registers[0] != registers[1]:
+        raise SystemExit("Decision choices differ between the specification and index")
 
-    digest = hashlib.sha256(files[PREVIEW]).hexdigest()
-    if files[CHECKSUM].decode() != f"{digest}  {PREVIEW}\n":
-        raise SystemExit("Standalone preview checksum mismatch")
-    scripts = re.findall(rb"<script>(.*?)</script>", files[PREVIEW], re.DOTALL)
-    if len(scripts) != 1:
-        raise SystemExit("Expected one inline preview script")
-    subprocess.run(["node", "--check"], input=scripts[0], check=True)
+    checksums = [
+        f"{hashlib.sha256(files[path]).hexdigest()}  {path}"
+        for path in (COMPONENT, PREVIEW, UPSTREAM_RESULTS)
+    ]
+    if files[CHECKSUM].decode().splitlines() != checksums:
+        raise SystemExit("P2.1 release checksum mismatch")
+    results = json.loads(files[UPSTREAM_RESULTS])
+    if len(results) != 120 or any(result["pass"] is not True for result in results):
+        raise SystemExit("Expected 120 passing historical release assertions")
+    subprocess.run(["node", "--check"], input=files[COMPONENT], check=True)
     print(f"Privacy patterns checked in {len(files)} tracked files")
-    print("66 decision IDs verified in the specification and index")
-    print("Standalone preview SHA-256 and JavaScript syntax verified")
+    print("66 decision IDs and choices agree in the specification and index")
+    print("P2.1 checksums, historical result count, and JavaScript syntax verified")
 
 
 if __name__ == "__main__":

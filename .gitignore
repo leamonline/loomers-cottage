@@ -26,3 +26,5 @@ coverage/
 *.har
 playwright-report/
 test-results/
+
+.venv/
