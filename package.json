@@ -1,0 +1,11 @@
+{
+  "name": "loomers-cottage",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "test": "playwright test tests/p21-preview.spec.js --reporter=line"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.60.0"
+  }
+}

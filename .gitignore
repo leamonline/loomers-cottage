@@ -21,3 +21,10 @@ node_modules/
 dist/
 coverage/
 .DS_Store
+.mcp.json
+*.p8
+*.har
+playwright-report/
+test-results/
+
+.venv/

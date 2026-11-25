@@ -1,0 +1,722 @@
+[
+  {
+    "viewport": 320,
+    "mode": "light",
+    "test": "nine grouped permanent widgets",
+    "pass": true
+  },
+  {
+    "viewport": 320,
+    "mode": "light",
+    "test": "six room cards",
+    "pass": true
+  },
+  {
+    "viewport": 320,
+    "mode": "light",
+    "test": "no horizontal overflow",
+    "pass": true
+  },
+  {
+    "viewport": 320,
+    "mode": "light",
+    "test": "concurrent charging and ventilation",
+    "pass": true
+  },
+  {
+    "viewport": 320,
+    "mode": "light",
+    "test": "incomplete security",
+    "pass": true
+  },
+  {
+    "viewport": 320,
+    "mode": "light",
+    "test": "stale vehicle age",
+    "pass": true
+  },
+  {
+    "viewport": 320,
+    "mode": "light",
+    "test": "smoke priority",
+    "pass": true
+  },
+  {
+    "viewport": 320,
+    "mode": "light",
+    "test": "uncertain occupancy",
+    "pass": true
+  },
+  {
+    "viewport": 320,
+    "mode": "light",
+    "test": "detail modal opens",
+    "pass": true
+  },
+  {
+    "viewport": 320,
+    "mode": "light",
+    "test": "escape closes",
+    "pass": true
+  },
+  {
+    "viewport": 320,
+    "mode": "light",
+    "test": "focus return",
+    "pass": true
+  },
+  {
+    "viewport": 320,
+    "mode": "light",
+    "test": "settings reachable",
+    "pass": true
+  },
+  {
+    "viewport": 320,
+    "mode": "light",
+    "test": "static atmosphere setting",
+    "pass": true
+  },
+  {
+    "viewport": 320,
+    "mode": "light",
+    "test": "no external network",
+    "pass": true
+  },
+  {
+    "viewport": 320,
+    "mode": "light",
+    "test": "no runtime errors",
+    "pass": true
+  },
+  {
+    "viewport": 320,
+    "mode": "dark",
+    "test": "nine grouped permanent widgets",
+    "pass": true
+  },
+  {
+    "viewport": 320,
+    "mode": "dark",
+    "test": "six room cards",
+    "pass": true
+  },
+  {
+    "viewport": 320,
+    "mode": "dark",
+    "test": "no horizontal overflow",
+    "pass": true
+  },
+  {
+    "viewport": 320,
+    "mode": "dark",
+    "test": "concurrent charging and ventilation",
+    "pass": true
+  },
+  {
+    "viewport": 320,
+    "mode": "dark",
+    "test": "incomplete security",
+    "pass": true
+  },
+  {
+    "viewport": 320,
+    "mode": "dark",
+    "test": "stale vehicle age",
+    "pass": true
+  },
+  {
+    "viewport": 320,
+    "mode": "dark",
+    "test": "smoke priority",
+    "pass": true
+  },
+  {
+    "viewport": 320,
+    "mode": "dark",
+    "test": "uncertain occupancy",
+    "pass": true
+  },
+  {
+    "viewport": 320,
+    "mode": "dark",
+    "test": "detail modal opens",
+    "pass": true
+  },
+  {
+    "viewport": 320,
+    "mode": "dark",
+    "test": "escape closes",
+    "pass": true
+  },
+  {
+    "viewport": 320,
+    "mode": "dark",
+    "test": "focus return",
+    "pass": true
+  },
+  {
+    "viewport": 320,
+    "mode": "dark",
+    "test": "settings reachable",
+    "pass": true
+  },
+  {
+    "viewport": 320,
+    "mode": "dark",
+    "test": "static atmosphere setting",
+    "pass": true
+  },
+  {
+    "viewport": 320,
+    "mode": "dark",
+    "test": "no external network",
+    "pass": true
+  },
+  {
+    "viewport": 320,
+    "mode": "dark",
+    "test": "no runtime errors",
+    "pass": true
+  },
+  {
+    "viewport": 390,
+    "mode": "light",
+    "test": "nine grouped permanent widgets",
+    "pass": true
+  },
+  {
+    "viewport": 390,
+    "mode": "light",
+    "test": "six room cards",
+    "pass": true
+  },
+  {
+    "viewport": 390,
+    "mode": "light",
+    "test": "no horizontal overflow",
+    "pass": true
+  },
+  {
+    "viewport": 390,
+    "mode": "light",
+    "test": "concurrent charging and ventilation",
+    "pass": true
+  },
+  {
+    "viewport": 390,
+    "mode": "light",
+    "test": "incomplete security",
+    "pass": true
+  },
+  {
+    "viewport": 390,
+    "mode": "light",
+    "test": "stale vehicle age",
+    "pass": true
+  },
+  {
+    "viewport": 390,
+    "mode": "light",
+    "test": "smoke priority",
+    "pass": true
+  },
+  {
+    "viewport": 390,
+    "mode": "light",
+    "test": "uncertain occupancy",
+    "pass": true
+  },
+  {
+    "viewport": 390,
+    "mode": "light",
+    "test": "detail modal opens",
+    "pass": true
+  },
+  {
+    "viewport": 390,
+    "mode": "light",
+    "test": "escape closes",
+    "pass": true
+  },
+  {
+    "viewport": 390,
+    "mode": "light",
+    "test": "focus return",
+    "pass": true
+  },
+  {
+    "viewport": 390,
+    "mode": "light",
+    "test": "settings reachable",
+    "pass": true
+  },
+  {
+    "viewport": 390,
+    "mode": "light",
+    "test": "static atmosphere setting",
+    "pass": true
+  },
+  {
+    "viewport": 390,
+    "mode": "light",
+    "test": "no external network",
+    "pass": true
+  },
+  {
+    "viewport": 390,
+    "mode": "light",
+    "test": "no runtime errors",
+    "pass": true
+  },
+  {
+    "viewport": 390,
+    "mode": "dark",
+    "test": "nine grouped permanent widgets",
+    "pass": true
+  },
+  {
+    "viewport": 390,
+    "mode": "dark",
+    "test": "six room cards",
+    "pass": true
+  },
+  {
+    "viewport": 390,
+    "mode": "dark",
+    "test": "no horizontal overflow",
+    "pass": true
+  },
+  {
+    "viewport": 390,
+    "mode": "dark",
+    "test": "concurrent charging and ventilation",
+    "pass": true
+  },
+  {
+    "viewport": 390,
+    "mode": "dark",
+    "test": "incomplete security",
+    "pass": true
+  },
+  {
+    "viewport": 390,
+    "mode": "dark",
+    "test": "stale vehicle age",
+    "pass": true
+  },
+  {
+    "viewport": 390,
+    "mode": "dark",
+    "test": "smoke priority",
+    "pass": true
+  },
+  {
+    "viewport": 390,
+    "mode": "dark",
+    "test": "uncertain occupancy",
+    "pass": true
+  },
+  {
+    "viewport": 390,
+    "mode": "dark",
+    "test": "detail modal opens",
+    "pass": true
+  },
+  {
+    "viewport": 390,
+    "mode": "dark",
+    "test": "escape closes",
+    "pass": true
+  },
+  {
+    "viewport": 390,
+    "mode": "dark",
+    "test": "focus return",
+    "pass": true
+  },
+  {
+    "viewport": 390,
+    "mode": "dark",
+    "test": "settings reachable",
+    "pass": true
+  },
+  {
+    "viewport": 390,
+    "mode": "dark",
+    "test": "static atmosphere setting",
+    "pass": true
+  },
+  {
+    "viewport": 390,
+    "mode": "dark",
+    "test": "no external network",
+    "pass": true
+  },
+  {
+    "viewport": 390,
+    "mode": "dark",
+    "test": "no runtime errors",
+    "pass": true
+  },
+  {
+    "viewport": 768,
+    "mode": "light",
+    "test": "nine grouped permanent widgets",
+    "pass": true
+  },
+  {
+    "viewport": 768,
+    "mode": "light",
+    "test": "six room cards",
+    "pass": true
+  },
+  {
+    "viewport": 768,
+    "mode": "light",
+    "test": "no horizontal overflow",
+    "pass": true
+  },
+  {
+    "viewport": 768,
+    "mode": "light",
+    "test": "concurrent charging and ventilation",
+    "pass": true
+  },
+  {
+    "viewport": 768,
+    "mode": "light",
+    "test": "incomplete security",
+    "pass": true
+  },
+  {
+    "viewport": 768,
+    "mode": "light",
+    "test": "stale vehicle age",
+    "pass": true
+  },
+  {
+    "viewport": 768,
+    "mode": "light",
+    "test": "smoke priority",
+    "pass": true
+  },
+  {
+    "viewport": 768,
+    "mode": "light",
+    "test": "uncertain occupancy",
+    "pass": true
+  },
+  {
+    "viewport": 768,
+    "mode": "light",
+    "test": "detail modal opens",
+    "pass": true
+  },
+  {
+    "viewport": 768,
+    "mode": "light",
+    "test": "escape closes",
+    "pass": true
+  },
+  {
+    "viewport": 768,
+    "mode": "light",
+    "test": "focus return",
+    "pass": true
+  },
+  {
+    "viewport": 768,
+    "mode": "light",
+    "test": "settings reachable",
+    "pass": true
+  },
+  {
+    "viewport": 768,
+    "mode": "light",
+    "test": "static atmosphere setting",
+    "pass": true
+  },
+  {
+    "viewport": 768,
+    "mode": "light",
+    "test": "no external network",
+    "pass": true
+  },
+  {
+    "viewport": 768,
+    "mode": "light",
+    "test": "no runtime errors",
+    "pass": true
+  },
+  {
+    "viewport": 768,
+    "mode": "dark",
+    "test": "nine grouped permanent widgets",
+    "pass": true
+  },
+  {
+    "viewport": 768,
+    "mode": "dark",
+    "test": "six room cards",
+    "pass": true
+  },
+  {
+    "viewport": 768,
+    "mode": "dark",
+    "test": "no horizontal overflow",
+    "pass": true
+  },
+  {
+    "viewport": 768,
+    "mode": "dark",
+    "test": "concurrent charging and ventilation",
+    "pass": true
+  },
+  {
+    "viewport": 768,
+    "mode": "dark",
+    "test": "incomplete security",
+    "pass": true
+  },
+  {
+    "viewport": 768,
+    "mode": "dark",
+    "test": "stale vehicle age",
+    "pass": true
+  },
+  {
+    "viewport": 768,
+    "mode": "dark",
+    "test": "smoke priority",
+    "pass": true
+  },
+  {
+    "viewport": 768,
+    "mode": "dark",
+    "test": "uncertain occupancy",
+    "pass": true
+  },
+  {
+    "viewport": 768,
+    "mode": "dark",
+    "test": "detail modal opens",
+    "pass": true
+  },
+  {
+    "viewport": 768,
+    "mode": "dark",
+    "test": "escape closes",
+    "pass": true
+  },
+  {
+    "viewport": 768,
+    "mode": "dark",
+    "test": "focus return",
+    "pass": true
+  },
+  {
+    "viewport": 768,
+    "mode": "dark",
+    "test": "settings reachable",
+    "pass": true
+  },
+  {
+    "viewport": 768,
+    "mode": "dark",
+    "test": "static atmosphere setting",
+    "pass": true
+  },
+  {
+    "viewport": 768,
+    "mode": "dark",
+    "test": "no external network",
+    "pass": true
+  },
+  {
+    "viewport": 768,
+    "mode": "dark",
+    "test": "no runtime errors",
+    "pass": true
+  },
+  {
+    "viewport": 1280,
+    "mode": "light",
+    "test": "nine grouped permanent widgets",
+    "pass": true
+  },
+  {
+    "viewport": 1280,
+    "mode": "light",
+    "test": "six room cards",
+    "pass": true
+  },
+  {
+    "viewport": 1280,
+    "mode": "light",
+    "test": "no horizontal overflow",
+    "pass": true
+  },
+  {
+    "viewport": 1280,
+    "mode": "light",
+    "test": "concurrent charging and ventilation",
+    "pass": true
+  },
+  {
+    "viewport": 1280,
+    "mode": "light",
+    "test": "incomplete security",
+    "pass": true
+  },
+  {
+    "viewport": 1280,
+    "mode": "light",
+    "test": "stale vehicle age",
+    "pass": true
+  },
+  {
+    "viewport": 1280,
+    "mode": "light",
+    "test": "smoke priority",
+    "pass": true
+  },
+  {
+    "viewport": 1280,
+    "mode": "light",
+    "test": "uncertain occupancy",
+    "pass": true
+  },
+  {
+    "viewport": 1280,
+    "mode": "light",
+    "test": "detail modal opens",
+    "pass": true
+  },
+  {
+    "viewport": 1280,
+    "mode": "light",
+    "test": "escape closes",
+    "pass": true
+  },
+  {
+    "viewport": 1280,
+    "mode": "light",
+    "test": "focus return",
+    "pass": true
+  },
+  {
+    "viewport": 1280,
+    "mode": "light",
+    "test": "settings reachable",
+    "pass": true
+  },
+  {
+    "viewport": 1280,
+    "mode": "light",
+    "test": "static atmosphere setting",
+    "pass": true
+  },
+  {
+    "viewport": 1280,
+    "mode": "light",
+    "test": "no external network",
+    "pass": true
+  },
+  {
+    "viewport": 1280,
+    "mode": "light",
+    "test": "no runtime errors",
+    "pass": true
+  },
+  {
+    "viewport": 1280,
+    "mode": "dark",
+    "test": "nine grouped permanent widgets",
+    "pass": true
+  },
+  {
+    "viewport": 1280,
+    "mode": "dark",
+    "test": "six room cards",
+    "pass": true
+  },
+  {
+    "viewport": 1280,
+    "mode": "dark",
+    "test": "no horizontal overflow",
+    "pass": true
+  },
+  {
+    "viewport": 1280,
+    "mode": "dark",
+    "test": "concurrent charging and ventilation",
+    "pass": true
+  },
+  {
+    "viewport": 1280,
+    "mode": "dark",
+    "test": "incomplete security",
+    "pass": true
+  },
+  {
+    "viewport": 1280,
+    "mode": "dark",
+    "test": "stale vehicle age",
+    "pass": true
+  },
+  {
+    "viewport": 1280,
+    "mode": "dark",
+    "test": "smoke priority",
+    "pass": true
+  },
+  {
+    "viewport": 1280,
+    "mode": "dark",
+    "test": "uncertain occupancy",
+    "pass": true
+  },
+  {
+    "viewport": 1280,
+    "mode": "dark",
+    "test": "detail modal opens",
+    "pass": true
+  },
+  {
+    "viewport": 1280,
+    "mode": "dark",
+    "test": "escape closes",
+    "pass": true
+  },
+  {
+    "viewport": 1280,
+    "mode": "dark",
+    "test": "focus return",
+    "pass": true
+  },
+  {
+    "viewport": 1280,
+    "mode": "dark",
+    "test": "settings reachable",
+    "pass": true
+  },
+  {
+    "viewport": 1280,
+    "mode": "dark",
+    "test": "static atmosphere setting",
+    "pass": true
+  },
+  {
+    "viewport": 1280,
+    "mode": "dark",
+    "test": "no external network",
+    "pass": true
+  },
+  {
+    "viewport": 1280,
+    "mode": "dark",
+    "test": "no runtime errors",
+    "pass": true
+  }
+]
