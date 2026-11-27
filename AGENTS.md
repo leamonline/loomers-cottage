@@ -6,3 +6,6 @@ Home Assistant is the canonical controller; Apple Home remains a supported every
 4. Use small reviewable changes, test locally, verify on Apple devices and HA Green, read back changed objects, record results and stop on mismatch.
 5. Keep native fallback and prior releases. Never delete existing entities or configuration without separate permission. Do not publish secrets or home identifiers.
 6. Release gates: G0 recovery before live writes; F1/F2 foundation; P2.1 Lab only; C1 read mirror; C2 contextual/validated data; C3 allowlisted controls and overrides; E1 energy; H1 diagnostics; L1 advisory learning; R1 seven-day parallel trial and approval; L2 bounded adaptation separately approved.
+
+## Public-source boundary
+Assume all GitHub content is public. Publish reusable software and synthetic examples only. Keep instance bindings, live fingerprints, household maintenance evidence, schedules and private deployment manifests outside GitHub. Do not include private details in issues, PRs, CI logs or artifacts. Public CI must never connect to the live home. Review privacy before publishing; see SECURITY.md. Repository visibility does not relax recovery or owner approval gates.
